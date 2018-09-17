@@ -13,7 +13,7 @@ function addCount() {
 
 var upgrade1x = 0;
 var price1x = 10;
-console.log(price1x);
+
 function firstUpgrade() {
     var money = document.getElementById('spending');
     var currentValue = parseInt(money.innerText)
@@ -28,6 +28,9 @@ function firstUpgrade() {
             .getElementById('spending')
             .innerText = spend;
         price1x++;
+        currentPrice = document
+            .getElementById('price-value1')
+
         // percent = price1x * 0.1;
         document
             .getElementById('price-value1')
@@ -36,13 +39,10 @@ function firstUpgrade() {
         // alert('Hands off this button, not enough clicks!')
         document.getElementById('btn1').disabled = true;
     }
-    console.log(price1x);};
-
-function priceGoesUp(a) {
-    var element = document.getElementById('#price-value1')
-    a * 0.1;
-    element.inner.text = a
 };
+
+
+
 
 var upgrade10x = 0;
 var price10x = 90;
